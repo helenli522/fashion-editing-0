@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- -->
+<!-- 使用thymeleaf需引入 -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div  id="tableP">
+    <table>
+        <caption>人员信息</caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+        </tr>
+        <!-- 通过th命令使用一些操作 -->
+        <!-- 通过${} 使用变量 -->
+        <tr  th:each="item: ${list}">
+            <td th:text="${{item.userID}}">编号</td>
+            <td th:text="${{item.userName}}">名字</td>
+            <td th:text="${{item.email}}">邮箱</td>
+            <td th:text="${{item.gender}}">性别</td>
+        </tr>
+    </table>
+</div>
+</div>
+</body>
+</html>
