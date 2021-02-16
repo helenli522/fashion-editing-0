@@ -14,6 +14,10 @@ public interface LineMapper {
     @Select("select * from Line where LID=#{LID}")
     public Line getLineByLID(Integer LID);
 
+//    获取全部线条列表
+    @Select("select * from Line")
+    public List<Line> getLines();
+
 //    根据类别获取线条
     @Select("select * from Line where LType=#{LType}")
     public List<Line> getLinesByLType(Integer LType);
