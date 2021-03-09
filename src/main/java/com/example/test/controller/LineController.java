@@ -13,8 +13,7 @@ public class LineController {
     @Autowired
     private LineService lineService;
 
-    @ResponseBody
-    @RequestMapping("/line/getAll")
+    @GetMapping("/line/getAll")
     public CommonResult getLines() {
         List<Line> lines = lineService.getLines();
         if(lines==null)

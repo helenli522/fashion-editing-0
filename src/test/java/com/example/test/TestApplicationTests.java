@@ -1,6 +1,6 @@
 package com.example.test;
 
-import com.example.test.service.BrowseService;
+import com.example.test.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +14,8 @@ public class TestApplicationTests {
 
 	@Autowired
 	DataSource dataSource;
+	@Autowired
+	UserService userService;
 
 	@Test
 	public void contextLoads() throws SQLException {
@@ -24,8 +26,8 @@ public class TestApplicationTests {
 	}
 
 	@Test
-	public void testDelete(){
-
+	public void testGetUserByName(){
+		System.out.println(userService.getUserByName("test1"));
 	}
 
 }

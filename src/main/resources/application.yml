@@ -1,6 +1,11 @@
 server:
   port: 8081
 spring:
+  #邮箱验证配置
+  mail:
+    username: helenli522@163.com
+    password: $oiuy768x$
+    host: smtp.163.com
   datasource:
     name:
     url: jdbc:mysql://1.15.114.144:3306/fashion?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=UTC

@@ -16,12 +16,12 @@ public class User {
         UserID = userID;
     }
 
-    public String getUserName() {
+    public String getName() {
         return Name;
     }
 
-    public void setUserName(String userName) {
-        Name = userName;
+    public void setName(String name) {
+        Name = name;
     }
 
     public String getPassword() {
