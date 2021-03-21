@@ -11,7 +11,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/user/regisiter")
+    @PostMapping("/user/register")
     public CommonResult register(@RequestBody User user){
         if (user.getGender()==null){
             user.setGender("");
