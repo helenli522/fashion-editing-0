@@ -28,7 +28,6 @@ public class ImageDetectController {
      * @return detectOut.html
      */
     @RequestMapping(value = "/detectImage", method = RequestMethod.POST)
-//    @GetMapping("/detectImage")
     public ModelAndView detectOut(String imageLink) {
 
         // step 1. detect image by imageUrl
@@ -42,7 +41,7 @@ public class ImageDetectController {
         // step 3. return detect result page
         return modelAndView;
     }
-    
+
 
 
 }
