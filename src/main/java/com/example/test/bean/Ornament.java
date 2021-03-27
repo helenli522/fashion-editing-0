@@ -4,7 +4,7 @@ public class Ornament {
 
     private Integer OID;
     private Integer OType;
-    private Integer ImageUrl;
+    private String ImageUrl;
 
     public Integer getOID() {
         return OID;
@@ -22,11 +22,11 @@ public class Ornament {
         this.OType = OType;
     }
 
-    public Integer getImageUrl() {
+    public String getImageUrl() {
         return ImageUrl;
     }
 
-    public void setImageUrl(Integer imageUrl) {
+    public void setImageUrl(String imageUrl) {
         ImageUrl = imageUrl;
     }
 

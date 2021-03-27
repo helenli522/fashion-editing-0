@@ -1,7 +1,10 @@
 package com.example.test.common;
 
+import com.example.test.bean.Work;
+
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -19,6 +22,7 @@ import java.awt.Toolkit;
 import java.awt.Transparency;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 
 
 public class ImageUtils {
@@ -180,7 +184,7 @@ public class ImageUtils {
     }
 
     public static void main(String[] args) {
-        String url = "http://1.15.114.144:8080/photo/seg001.jpg";
+        String url = "http://1.15.114.144:8080/photo/skg001.jpg";
         System.out.println(image2Base64(url));
     }
 }
