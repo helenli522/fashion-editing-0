@@ -56,7 +56,7 @@ public class ImageDetectController {
     public String Base64Toimg2(@RequestParam("base64str")String base64str) throws IOException {
 //        String s1 = "F:\\jiao_now\\FashionEditing\\";
         String s1 = "/home/ubuntu/image/";
-        String s2 = ".jpg";
+        String s2 = ".png";
         List<Work> works = workService.getAllWork();
         int num = works.size() + 1;
         String imgPath = s1 + num + s2;

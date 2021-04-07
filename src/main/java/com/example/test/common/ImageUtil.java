@@ -21,12 +21,16 @@ import javax.swing.*;
  */
 public class ImageUtil {
     public static void main(String[] args) {
-        reSize(new File("F:\\jiao_now\\FashionEditing\\1\\qrcode_258_258.jpg"),
-                new File("F:\\jiao_now\\FashionEditing\\2\\320_320.jpg"),
-                320, 320, true);
-        reSize(new File("F:\\jiao_now\\FashionEditing\\1\\qrcode_258_258.jpg"),
-                new File("F:\\jiao_now\\FashionEditing\\2\\320_340.jpg"),
-                320, 340, false);
+        reSize(new File("F:\\jiao_now\\FashionEditing\\7.png"),
+                new File("F:\\jiao_now\\FashionEditing\\work7.png"),
+                256, 256, true);
+
+//        reSize(new File("F:\\jiao_now\\FashionEditing\\1\\qrcode_258_258.jpg"),
+//                new File("F:\\jiao_now\\FashionEditing\\2\\320_320.jpg"),
+//                320, 320, true);
+//        reSize(new File("F:\\jiao_now\\FashionEditing\\1\\qrcode_258_258.jpg"),
+//                new File("F:\\jiao_now\\FashionEditing\\2\\320_340.jpg"),
+//                320, 340, false);
     }
 
     /**
